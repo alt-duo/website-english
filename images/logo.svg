@@ -5,9 +5,9 @@
   viewBox="0 0 60 60"
   preserveAspectRatio="xMidYMid meet"
 >
-  <rect width="60" height="60" rx="10" ry="10" fill="rgb(152, 216, 255)" />
+  <rect width="60" height="60" rx="10" ry="10" fill="rgba(255, 255, 255, 1)" />
   <g transform="translate(15, 15)">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="#ffbe98" width="30" height="30">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="#000000ff" width="30" height="30">
       <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12L11.204 3.045c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125A1.125 1.125 0 0 0 5.625 21h4.125v-4.875A1.125 1.125 0 0 1 10.875 15h2.25a1.125 1.125 0 0 1 1.125 1.125V21h4.125A1.125 1.125 0 0 0 19.5 19.875V9.75M8.25 21h8.25" />
     </svg>
   </g>
