@@ -1,0 +1,63 @@
+body {
+    font-family: Verdana, sans-serif;
+    font-size: 24px;
+}
+
+.row {
+    display: flex;
+}
+
+.box {
+    border: 1px solid black;
+    padding: 12px;
+}
+
+button {
+    background-color: lightgray;
+    font-size: 24px;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    height: auto;
+}
+
+.filterButton {
+    background-color: #f1f1f1;
+    margin: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 6px;
+}
+
+.filterButton.active {
+    background-color: lightgray;
+}
+
+#switchLang {
+    margin: auto;
+    margin-left: 100px;
+}
+
+#resourceTable {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+}
+
+#resourceTable th, #resourceTable td {
+    text-align: left;
+    padding: 12px;
+}
+
+#resourceTable tr {
+    border-bottom: 1px solid #ddd;
+}
+
+#resourceTable tr.header {
+    background-color: #f1f1f1;
+}
+
+#resourceTable tr:hover {
+    background-color: #f1f1f1;
+}
