@@ -1,25 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
     <title>english4elderly</title>
-    <meta name="description" content="blah">
-    <link rel="icon" href="image/logo.svg" type="image/svg+xml">
-    <link rel="manifest" href="/site.webmanifest">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/fade.css">
-    <link rel="stylesheet" href="css/new.css">
-    <meta name="theme-color" content="#596886"/>
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <script>window.addEventListener("beforeunload", function () {
-      document.body.classList.add("animate-out");
-    });</script>
+    <link rel="stylesheet" href="css/one.css">
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
 </head>
 
-<body class = "animate-in">
-<div class="flex flex-col h-screen w-screenjustify-between ">
 <header class="bg-main2">
     
 <div class="relative z-20 border-b bg-main rounded-md">
@@ -41,25 +31,26 @@
 <div class="flex flex-col h-full justify-between lg:items-center lg:flex-row">
 <ul class="px-6 pt-32 text-gray-700 space-y-8 md:px-12 lg:space-y-0 lg:flex lg:space-x-12 lg:pt-0">
     <li>
-        <a href="index.html" class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:bg-main3">
-            <span class="relative text-cyan-800">home</span>
+        <a href="index.html" class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:bg-main3 before:transition before:duration-300 hover:before:origin-left hover:before:scale-x-100">
+            <span class="relative text-cyan-800" english="home" chinese="主页"></span>
         </a>
     </li>
         <li>
-        <a href="projects.html" class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:bg-main3 before:transition before:duration-300 hover:before:origin-left hover:before:scale-x-100">
-            <span class="relative group-hover:text-cyan-800">projects and achievments</span>
+            
+        <a href="practice.html" class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:bg-main3">
+            <span class="relative group-hover:text-cyan-800" english="practice" chinese="练习"></span>
         </a>
     </li>
     <li>
-      <a href="gallery.html" class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:bg-main3 before:transition before:duration-300 hover:before:origin-left hover:before:scale-x-100">
-          <span class="relative text-cyan-800">gallery</span>
-      </a>
+        <a href="aboutus.html" class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:bg-main3 before:transition before:duration-300 hover:before:origin-left hover:before:scale-x-100">
+            <span class="relative group-hover:text-cyan-800" english="about us" chinese="关于我们"></span>
+        </a>
     </li>
     <li>
-        <a href="aboutme.html" class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:bg-main3 before:transition before:duration-300 hover:before:origin-left hover:before:scale-x-100">
-            <span class="relative group-hover:text-cyan-800">about me</span>
-        </a>
-</li>
+    <a onclick="switchLanguage()" class="upper group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:bg-main3 before:transition before:duration-300 hover:before:origin-left hover:before:scale-x-100">
+        <span class="relative group-hover:text-cyan-800" english="用中文字" chinese="Switch to English"></span>
+    </a>
+    </li>
 
 </ul>
 
@@ -135,110 +126,108 @@
 
 </header>
 
-    
-<main class="">
-    <section
-      id="hero"
-      class="widescreen:section-min-height tallscreen:section-min-height mb-12 flex scroll-mt-40 flex-col-reverse items-center justify-center gap-8 p-6 sm:flex-row"
-    >
-      <article class="sm:w-1/2 mx-auto">
-          <h1 class="flex items-center justify-start sm:justify-center font-extrabold text-8xl"
-            >english for the elderly</h1>
-        <p
-          class="mt-4  gap-auto max-w-md text-center text-2xl text-slate-700 dark:text-slate-400 sm:text-left"
-        >
-          blah blha blah
-        <p
-          class="mt-4 max-w-md text-center text-2xl text-slate-700 dark:text-slate-400 sm:text-left"
-        >
-          :) <br>jizz 
-        </p>
-      </article>
-      <style>
-        img {
-          -drag: none;
-          user-select: none;
-          -moz-user-select: none;
-          -webkit-user-drag: none;
-          -webkit-user-select: none;
-          -ms-user-select: none;
-
-        }
-        
-    </style>
-    <img class="w-1/2 h-1/2 rounded-3xl" src="images/maxhomepage.jpg" alt="Max Yang at a Mainly Mozart Youth Orchestra Concert at the Rady Shell located in San Diego." />
-    </section>
-
-    <hr class="mx-auto w-1/2 bg-black" />
-    <section
-      id="testimonials" class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-20 p-6 bg">
-      <h2
-        class="mb-6 text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl bg-2"
-      >
-        Testimonials
-      </h2>
-      <figure class="my-12">
-        <blockquote
-          class="relative rounded-3xl bg-teal-600 py-12 pl-14 pr-8 dark:bg-black"
-        >
-          <p
-            class="mt-2 text-left text-2xl text-white before:absolute before:top-0 before:left-0 before:translate-x-2 before:translate-y-2 before:transform before:font-serif before:text-9xl before:text-white before:opacity-25 before:content-['\201C'] after:absolute after:-bottom-20 after:right-0 after:-translate-x-2 after:-translate-y-2 after:transform after:font-serif after:text-9xl after:text-white after:opacity-25 after:content-['\201D'] dark:text-slate-400 sm:text-3xl"
-          >
-          uR BeAuTiFuL
-          </p>
-        </blockquote>
-        <figcaption
-          class="mt-2 text-right text-xl italic text-slate-500 dark:text-slate-400 sm:text-2xl"
-        >
-          &#8212;Emma Lee, 2023
-        </figcaption>
-      </figure>
-      <figure class="my-12">
-        <blockquote
-          class="relative rounded-3xl bg-teal-600 py-12 pl-14 pr-8 dark:bg-black"
-        >
-          <p
-            class="mt-2 text-left text-2xl text-white before:absolute before:top-0 before:left-0 before:translate-x-2 before:translate-y-2 before:transform before:font-serif before:text-9xl before:text-white before:opacity-25 before:content-['\201C'] after:absolute after:-bottom-20 after:right-0 after:-translate-x-2 after:-translate-y-2 after:transform after:font-serif after:text-9xl after:text-white after:opacity-25 after:content-['\201D'] dark:text-slate-400 sm:text-3xl"
-          >
-          this website was so fun it made me forget that i was running from the government for Tax evasion and terrorism
-          </p>
-        </blockquote>
-        <figcaption
-          class="mt-2 text-right text-xl italic text-slate-500 dark:text-slate-400 sm:text-2xl"
-        >
-          &#8212;Hongting Liu
-        </figcaption>
-      </figure>
-      <figure class="my-12">
-        <blockquote
-          class="relative rounded-3xl bg-teal-600 py-12 pl-14 pr-8 dark:bg-black"
-        >
-          <p
-            class="mt-2 text-left text-2xl text-white before:absolute before:top-0 before:left-0 before:translate-x-2 before:translate-y-2 before:transform before:font-serif before:text-9xl before:text-white before:opacity-25 before:content-['\201C'] after:absolute after:-bottom-20 after:right-0 after:-translate-x-2 after:-translate-y-2 after:transform after:font-serif after:text-9xl after:text-white after:opacity-25 after:content-['\201D'] dark:text-slate-400 sm:text-3xl"
-          >
-          Max Yang is a very talented and young violinist. He is a kind young man and has great talent.
-          </p>
-        </blockquote>
-        <figcaption
-
-        
-          class="mt-2 text-right text-xl italic text-slate-500 dark:text-slate-400 sm:text-2xl"
-        >
-          &#8212;Joey Wang
-        </figcaption>
-      </figure>
-    </section>
-  
-
-        
-    
-</div>
-
-</main>
 
 
-</div>
-  
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+<br>
+    <b chinese="英文到中文翻译: " english="English to Chinese Translator: "></b><a href="https://translate.google.com/?sl=en&tl=zh-CN&op=translate" target="_blank"><button chinese="点这里" english="Click here" class="bb" ></button></a>
+    <div class="box">
+        <b chinese="筛选" english="Filters"></b>
+        <div class="row">
+            <p chinese="种类: " english="Type: "></p>
+            <button class="filterButton type bb" id="conversation" type="button" onclick="filterType('conversation')" chinese="对话" english="Conversation"></button>
+            <button class="filterButton type bb" id="story" type="button" onclick="filterType('story')" chinese="故事" english="Story"></button>
+            <button class="filterButton type bb" id="video" type="button" onclick="filterType('video')" chinese="视频" english="Video"></button>
+        </div>
+        <br>
+        <div class="row">
+            <p chinese="难度: " english="Difficulty: "></p>
+            <button class="filterButton difficulty bb" id="beginner" type="button" onclick="filterDifficulty('beginner')" chinese="新手" english="Beginner"></button>
+            <button class="filterButton difficulty bb" id="intermediate" type="button" onclick="filterDifficulty('intermediate')" chinese="中级" english="Intermediate"></button>
+            <button class="filterButton difficulty bb" id="advanced" type="button" onclick="filterDifficulty('advanced')" chinese="高级" english="Advanced"></button>
+        </div>
+    </div>
+    <table id="resourceTable">
+        <tr class="header">
+            <th style="width:40%;" chinese="标题" english="Name">a</th>
+            <th style="width:20%;" chinese="种类" english="Type"></th>
+            <th style="width:20%;" chinese="难度" english="Difficulty"></th>
+            <th style="width:20%;" chinese="连接" english="Link"></th>
+        </tr>
+        <tr>
+            <td chinese="日常对话" english="Everyday Dialogues"></td>
+            <td class="type" chinese="对话" english="Conversation"></td>
+            <td class="difficulty" chinese="中级" english="Intermediate"></td>
+            <td><a href="https://americanenglish.state.gov/files/ae/resource_files/b_dialogues_everyday_conversations_english_lo_0.pdf" target="_blank" ><button chinese="点这里" english="Click here" class="bb"></button></td>
+        </tr>
+        <tr>
+            <td chinese="实用对话" english="Practical Dialogues"></td>
+            <td class="type" chinese="对话" english="Conversation"></td>
+            <td class="difficulty" chinese="中级" english="Intermediate"></td>
+            <td><a href="https://agendaweb.org/listening/practical-english-conversations.html" target="_blank"></a><button chinese="点这里" english="Click here" class="bb"></button></td>
+        </tr>
+        <tr>
+            <td chinese="绕口令" english="Tongue Twisters"></td>
+            <td class="type" chinese="故事" english="Story"></td>
+            <td class="difficulty" chinese="新手" english="Beginner"></td>
+            <td><a href="https://www.engvid.com/english-resource/50-tongue-twisters-improve-pronunciation/" target="_blank"></a><button chinese="点这里" english="Click here" class="bb"></button></td>
+        </tr>
+        <tr>
+            <td chinese="短故事1" english="Short Stories 1"></td>
+            <td class="type" chinese="故事" english="Story"></td>
+            <td class="difficulty" chinese="中级" english="Intermediate"></td>
+            <td><a href="https://lingoway.org/blog/wp-content/uploads/2023/08/100-English-Short-Stories.pdf" target="_blank"></a><button chinese="点这里" english="Click here" class="bb"></button></td>
+        </tr>
+        <tr>
+            <td chinese="短故事2" english="Short Stories 2"></td>
+            <td class="type" chinese="故事" english="Story"></td>
+            <td class="difficulty" chinese="高级" english="Advanced"></td>
+            <td><a href="https://easystoriesinenglish.com/category/beginner/" target="_blank"></a><button chinese="点这里" english="Click here" class="bb"></button></td>
+        </tr>
+        <tr>
+            <td chinese="最常用的词" english="Most Common Phrases"></td>
+            <td class="type" chinese="视频" english="Video"></td>
+            <td class="difficulty" chinese="新手" english="Beginner"></td>
+            <td><a href="https://www.youtube.com/watch?v=_FIIQwck7gU&list=PL41R2vH_CL41NhefmUPZqjwtV9LFrz4SR&index=3" target="_blank"></a><button chinese="点这里" english="Click here" class="bb"></button></td>
+        </tr>
+        <tr>
+            <td chinese="1000常用短句" english="1000 Everyday Sentences"></td>
+            <td class="type" chinese="视频" english="Video"></td>
+            <td class="difficulty" chinese="新手" english="Beginner"></td>
+            <td><a href="https://www.youtube.com/watch?v=5yjf1RvhflI&list=PL41R2vH_CL41NhefmUPZqjwtV9LFrz4SR" target="_blank"></a><button chinese="点这里" english="Click here" class="bb"></button></td>
+        </tr>
+        <tr>
+            <td chinese="听力技能联系1" english="Listening Comprehension Practice 1"></td>
+            <td class="type" chinese="视频" english="Video"></td>
+            <td class="difficulty" chinese="新手" english="Beginner"></td>
+            <td><a href="https://www.youtube.com/watch?v=ZsNtwhOJINE&list=PL41R2vH_CL41NhefmUPZqjwtV9LFrz4SR&index=2" target="_blank"></a><button chinese="点这里" english="Click here" class="bb"></button></td>
+        </tr>
+        <tr>
+            <td chinese="听力技能联系2" english="Listening Comprehension Practice 2"></td>
+            <td class="type" chinese="视频" english="Video"></td>
+            <td class="difficulty" chinese="中级" english="Intermediate"></td>
+            <td><a href="https://www.youtube.com/watch?v=Na94GbJLnKM&list=PLnHNMRQeF6N-k6B--E93ebZuMVaPsIfb-" target="_blank"></a><button chinese="点这里" english="Click here" class="bb"></button></td>
+        </tr>
+        <tr>
+            <td chinese="高级短语" english="Advanced Phrases"></td>
+            <td class="type" chinese="视频" english="Video"></td>
+            <td class="difficulty" chinese="高级" english="Advanced"></td>
+            <td><a href="https://www.youtube.com/watch?v=TR0JZiapxXM" target="_blank"></a><button chinese="点这里" english="Click here" class="bb"></button></td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
 </body>
 </html>

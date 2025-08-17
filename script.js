@@ -1,10 +1,12 @@
-let englishMode = true;
+let englishMode = false;
 
 function switchLanguage(){
+    
     const allElements = document.querySelectorAll("*");
     allElements.forEach(element => {
         if (englishMode && element.hasAttribute("chinese")) {
             element.textContent = element.getAttribute("chinese");
+            
         } else if (!englishMode && element.hasAttribute("english")) {
             element.textContent = element.getAttribute("english");
         }
