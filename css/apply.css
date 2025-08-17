@@ -1,5 +1,4 @@
     iframe {
         width: 100%;
-        height: auto;
-        aspect-ratio: 16 / 9; /* For a 16:9 aspect ratio */
+        height: 100%;
     }

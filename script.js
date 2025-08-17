@@ -1,4 +1,11 @@
 let englishMode = false;
+// Helper: set a cookie
+function setCookie(name, value, days) {
+    const d = new Date();
+    d.setTime(d.getTime() + (days*24*60*60*1000));
+    const expires = "expires="+ d.toUTCString();
+    document.cookie = name + "=" + value + ";" + expires + ";path=/";
+}
 
 function switchLanguage(){
     
@@ -50,6 +57,53 @@ function filterDifficulty(difficulty) {
     }
     refreshTable();
 }
+
+
+    // Helper: get a cookie
+    function getCookie(name) {
+      const cname = name + "=";
+      const decodedCookie = decodeURIComponent(document.cookie);
+      const ca = decodedCookie.split(';');
+      for(let i=0; i<ca.length; i++) {
+        let c = ca[i].trim();
+        if (c.indexOf(cname) === 0) {
+          return c.substring(cname.length, c.length);
+        }
+      }
+      return "";
+    }
+/*
+    // Apply language
+    function applyLanguage(lang) {
+      const greeting = document.getElementById("greeting");
+      if (lang === "zh") {
+        greeting.textContent = "你好，世界！";
+      } else if (lang === "es") {
+        greeting.textContent = "¡Hola, mundo!";
+      } else {
+        greeting.textContent = "Hello, world!";
+      }
+    }
+*/
+/*
+// Change language and save to cookie
+    function setLanguage(lang) {
+      setCookie("language", lang, 30); // save for 30 days
+      applyLanguage(lang);
+    }
+*/
+    // On page load, check cookie
+    document.onload = function() {
+      let lang = getCookie("language");
+      if (lang === "") {
+        lang = "en"; // default
+        setCookie("language", lang, 30);
+      }else if(lang==="zh"){
+        switchLanguage();
+      }
+    }
+
+
 
 function refreshTable() {
     const table = document.getElementById("resourceTable");
